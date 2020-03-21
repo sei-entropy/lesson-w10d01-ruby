@@ -291,8 +291,8 @@ puts "Hi my name is: " + my_name
 This works fine. Things aren't so simple when that variable is of a different data type. Like a number...
 
 ```rb
-class_number = 984
-# => 984
+class_number = 42
+# => 42
 
 puts "I am teaching SEI " + class_number
 # TypeError: no implicit conversion of Fixnum into String from (pry):26:in `+'
@@ -409,7 +409,7 @@ When you see an `unless foo`, read it as `if !foo`
 > `if !foo` can always be written as `unless foo` which creates a more readable line
 
 
-#### Ternary operator  
+#### Ternary operator
 
 A ternary operator looks just like we have seen in JS `condition ? true : false`
 
@@ -481,11 +481,12 @@ When you should use single-line and multi-line when clauses are up to you, it's 
 Example:
 
 ```ruby
-person_name = "Reem"
+person_name = "Hisham"
 
 case person_name
 when "Usman" then p "Lead Instructor"
-when "Reem" then p "IA"
+when "Hisham" then p "IA"
+when "Sager" then p "IA"
 else
   p "Student"
 end
@@ -718,8 +719,8 @@ sei_class[:teacher]
 Modifying hash values...
 
 ```ruby
-sei_class[:teacher] = "Reem"
-# => "Reem"
+sei_class[:teacher] = "Mohammad"
+# => "Mohammad"
 ```
 
 You can also use strings as hash keys... 
@@ -745,8 +746,8 @@ sei_class["teacher"]
 
 And modify...
 ```ruby
-sei_class["teacher"] = "Reem"
-# => "Reem"
+sei_class["teacher"] = "Sager"
+# => "Sager"
 ```
 
 **Note the use of => (or "hash rockets") instead of : when using strings as keys.**

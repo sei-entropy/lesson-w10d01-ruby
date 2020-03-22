@@ -11,6 +11,8 @@
 ```
 ```text
 Your answer.
+8 
+Power of (Exponentiation)
 ```
 
 ```rb
@@ -18,6 +20,8 @@ Your answer.
 ```
 ```text
 Your answer.
+144
+because of the order (in the brackets goes First) 
 ```
 
 ```rb
@@ -25,6 +29,8 @@ Your answer.
 ```
 ```text
 Your answer.
+"a milli a milli a milli a milli a milli a milli"
+concatenation then print it three times 
 ```
 
 ```rb
@@ -32,6 +38,8 @@ Your answer.
 ```
 ```text
 Your answer.
+Error 
+*4 will works print it 4 times but / i don't think will work because it's applied on string
 ```
 
 ```rb
@@ -40,6 +48,8 @@ puts "My favorite number is: " + my_favorite_number
 ```
 ```text
 Your answer.
+Error 
+it should be with # and inside ""
 ```
 
 ```rb
@@ -48,6 +58,8 @@ puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
 Your answer.
+My favorite number is: 13
+
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +67,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[ yes] false
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[yes ] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -79,6 +91,8 @@ end
 ```
 ```text
 Your answer.
+My name is: 
+it will print it the ""
 ```
 
 ```rb
@@ -89,6 +103,8 @@ end
 ```
 ```text
 Your answer.
+nothing 
+
 ```
 
 ```rb
@@ -99,6 +115,7 @@ end
 ```
 ```text
 Your answer.
+Error no_name is undefiend 
 ```
 
 ```rb
@@ -109,6 +126,7 @@ end
 ```
 ```text
 Your answer.
+My age is ___ <the user input>
 ```
 
 ### Conditionals
@@ -134,10 +152,20 @@ Your output should look something like this...
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
-  end
+i = 1
+while i <= 100
+  # Your code goes in here.
+  if i%3 ==0 && i %5 ==0 
+   puts "FizzBuzz"
+  elsif i % 3 ==0
+   puts "Fizz"
+  elsif i%5 ==0 
+   puts "Buzz"
+  else 
+   puts i
+  end 
+  i++
+end
   ```
 
 </details>

@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+a milli a millia milli a millia milli a milli
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+you cant divide string on num
 ```
 
 ```rb
@@ -39,7 +39,8 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+ypeError: no implicit conversion of Integer into String
+you can use puts "My favorite number is:#{my_favorite_number} "
 ```
 
 ```rb
@@ -47,7 +48,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +56,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
+[yes] false
+[] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
-[ ] NaN
-[ ] nil
+[yes] NaN
+[yes] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +79,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil
 ```
 
 ```rb
@@ -88,7 +89,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil
 ```
 
 ```rb
@@ -98,7 +99,7 @@ if age
 end
 ```
 ```text
-Your answer.
+TypeError: no implicit conversion of nil into String
 ```
 
 ```rb
@@ -108,7 +109,7 @@ if age
 end
 ```
 ```text
-Your answer.
+SyntaxError: unexpected end, expecting end-of-input
 ```
 
 ### Conditionals

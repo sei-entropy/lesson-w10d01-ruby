@@ -11,37 +11,38 @@ Access the second value in `planeteers`.
 ```rb
 # Your answer here
 ```
-
+planeteers[2]
+=> "Captain Planet"
 Add "Heart" to the end of `planeteers`.
 
 ```rb
 # Your answer here
 ```
-
+planeteers.push("Heart")
 Remove "Captain Planet" from the array **(without using a method)**.
 
 ```rb
 # Your answer here
 ```
-
+planeteers.delete_at(2)
 Combine `planeteers` with `rangers = ["Red", "Blue", "Pink", "Yellow", "Black"]` and save the result in a variable called `heroes`.
 
 ```rb
 # Your answer here
 ```
-
+heroes = planeteers + rangers 
 Alphabetize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.6.1/Array.html).
 
 ```rb
 # Your answer here
 ```
-
+heroes.sort
 Randomize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.6.1/Array.html).
 
 ```rb
 # Your answer here
 ```
-
+heroes.shuffle
 #### Bonus
 
 Select a random element from `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.6.1/Array.html).
@@ -55,7 +56,7 @@ Select all elements in `heroes` that begin with "B" using a method. [The Ruby do
 ```rb
 # Your answer here
 ```
-
+ heroes.sample
 ### Hashes
 
 Initialize a hash called `ninja_turtle` with the properties `name`, `weapon` and `radical`. They should have values of "Michelangelo", "Nunchuks" and `true` respectively.

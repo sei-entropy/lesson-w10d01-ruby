@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+=> 8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+=> 144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+=> "a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+NoMethodError: undefined method `/' for "a milli a milli a milli a milli ":String
 ```
 
 ```rb
@@ -39,7 +39,8 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+TypeError: no implicit conversion of Fixnum into String
+from (pry):6:in `+'
 ```
 
 ```rb
@@ -47,7 +48,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +56,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
+[*] false
+[*] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[*] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +79,8 @@ if no_name
 end
 ```
 ```text
-Your answer.
+My name is: 
+=> nil
 ```
 
 ```rb
@@ -88,7 +90,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+=> nil
 ```
 
 ```rb
@@ -98,7 +100,8 @@ if age
 end
 ```
 ```text
-Your answer.
+TypeError: no implicit conversion of nil into String
+from (pry):31:in `+'
 ```
 
 ```rb
@@ -108,7 +111,8 @@ if age
 end
 ```
 ```text
-Your answer.
+My age is: if age
+=> nil
 ```
 
 ### Conditionals
@@ -134,10 +138,20 @@ Your output should look something like this...
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
   ```rb
-  i = 1
-  while i <= 100
-    # Your code goes in here.
-  end
+i = 1
+while i <= 100
+  if i%3 == 0 
+  p "Fizz"
+  elsif i%5 == 0 
+  p "Buzz"
+  elsif i%3 == 0 && i%5 == 0 
+  p "FizzBuzz"
+  else 
+  p i 
+  end 
+end
   ```
 
 </details>
+
+

@@ -9,37 +9,72 @@ planeteers = ["Earth", "Wind", "Captain Planet", "Fire", "Water"]
 Access the second value in `planeteers`.
 
 ```rb
-# Your answer here
+planeteers[1]
 ```
 
 Add "Heart" to the end of `planeteers`.
 
 ```rb
-# Your answer here
+ planeteers.push("Heart")
 ```
 
 Remove "Captain Planet" from the array **(without using a method)**.
 
 ```rb
-# Your answer here
+ planeteers.delete("Captain Planet")
 ```
 
 Combine `planeteers` with `rangers = ["Red", "Blue", "Pink", "Yellow", "Black"]` and save the result in a variable called `heroes`.
 
 ```rb
-# Your answer here
+ heroes =  planeteers + rangers
+ --------
+ ["Earth",
+ "Wind",
+ "Fire",
+ "Water",
+ "Heart",
+ "Red",
+ "Blue",
+ "Pink",
+ "Yellow",
+ "Black"]
+
 ```
 
 Alphabetize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.6.1/Array.html).
 
 ```rb
-# Your answer here
+ heroes.sort_by { |name| name.scan(/\d+/).map(&:to_i) }
+ --------
+ ["Black",
+ "Wind",
+ "Fire",
+ "Water",
+ "Heart",
+ "Red",
+ "Blue",
+ "Pink",
+ "Yellow",
+ "Earth"]
+
 ```
 
 Randomize the contents of `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.6.1/Array.html).
 
 ```rb
-# Your answer here
+ heroes.shuffle
+ ---------
+ ["Wind",
+ "Yellow",
+ "Pink",
+ "Black",
+ "Heart",
+ "Water",
+ "Blue",
+ "Fire",
+ "Red",
+ "Earth"]
 ```
 
 #### Bonus

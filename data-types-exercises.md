@@ -12,28 +12,29 @@
 ```text
 Your answer.
 ```
-
+ =>8
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
 Your answer.
 ```
-
+=> 144
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
 Your answer.
 ```
-
+=> "a milli a millia milli a millia milli a milli"
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
 Your answer.
 ```
-
+undefined method `/' for "a milli a milli a milli a milli ":String
+ 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
@@ -41,7 +42,7 @@ puts "My favorite number is: " + my_favorite_number
 ```text
 Your answer.
 ```
-
+no implicit conversion of Fixnum into String
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
@@ -49,20 +50,20 @@ puts "My favorite number is: #{my_favorite_number}"
 ```text
 Your answer.
 ```
-
+My favorite number is: 13
 ### Truthiness and Falsiness
 
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
+[* ] false
+[ *] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[ *] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -80,7 +81,7 @@ end
 ```text
 Your answer.
 ```
-
+My name is:
 ```rb
 no_name = nil
 if no_name
@@ -90,7 +91,7 @@ end
 ```text
 Your answer.
 ```
-
+nil
 ```rb
 age = 21
 if age
@@ -100,7 +101,7 @@ end
 ```text
 Your answer.
 ```
-
+no implicit conversion of nil into String
 ```rb
 age = gets.chomp
 if age
@@ -110,7 +111,7 @@ end
 ```text
 Your answer.
 ```
-
+unexpected keyword_end, expecting end-of-input
 ### Conditionals
 
 Write the code for the following exercise inside of the `app.rb` located in this repo. Run/test your code using `ruby app.rb` in the Terminal.

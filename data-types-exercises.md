@@ -35,7 +35,7 @@ Your answer.
 ```
 ```text
 Your answer.
-undefined method `/'
+error
 ```
 
 ```rb
@@ -44,7 +44,7 @@ puts "My favorite number is: " + my_favorite_number
 ```
 ```text
 Your answer.
- no implicit conversion of Integer into String
+ error
 ```
 
 ```rb
@@ -107,7 +107,7 @@ end
 ```
 ```text
 Your answer.
-no implicit conversion of nil into String
+error
 ```
 
 ```rb

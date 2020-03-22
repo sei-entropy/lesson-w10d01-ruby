@@ -11,6 +11,7 @@
 ```
 ```text
 Your answer.
+8
 ```
 
 ```rb
@@ -18,6 +19,7 @@ Your answer.
 ```
 ```text
 Your answer.
+144
 ```
 
 ```rb
@@ -25,6 +27,7 @@ Your answer.
 ```
 ```text
 Your answer.
+"a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
@@ -32,6 +35,7 @@ Your answer.
 ```
 ```text
 Your answer.
+undefined method `/'
 ```
 
 ```rb
@@ -40,6 +44,7 @@ puts "My favorite number is: " + my_favorite_number
 ```
 ```text
 Your answer.
+ no implicit conversion of Integer into String
 ```
 
 ```rb
@@ -48,6 +53,7 @@ puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
 Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +61,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
+[✔️] false
+[✔️] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
-[ ] undefined
+[✔️] undefined
 [ ] NaN
-[ ] nil
+[✔️] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -79,6 +85,7 @@ end
 ```
 ```text
 Your answer.
+My name is:
 ```
 
 ```rb
@@ -89,6 +96,7 @@ end
 ```
 ```text
 Your answer.
+nil
 ```
 
 ```rb
@@ -99,6 +107,7 @@ end
 ```
 ```text
 Your answer.
+no implicit conversion of nil into String
 ```
 
 ```rb
@@ -109,6 +118,7 @@ end
 ```
 ```text
 Your answer.
+My age is: if age
 ```
 
 ### Conditionals

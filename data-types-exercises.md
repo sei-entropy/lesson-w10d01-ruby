@@ -10,28 +10,29 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+"a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+NoMethodError: undefined method `/' for "a milli a milli a milli a milli ":String
+from (pry):3:in `__pry__'
 ```
 
 ```rb
@@ -39,7 +40,11 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+
+[2] pry(main)> puts "My favorite number is: " + my_favorite_number
+TypeError: no implicit conversion of Fixnum into String
+from (pry):2:in `+'
+
 ```
 
 ```rb
@@ -47,7 +52,9 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+My favorite number is: 13
+=> nil
+
 ```
 
 ### Truthiness and Falsiness
@@ -55,11 +62,11 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
-[ ] [ ] (empty array)
+[ false] false
+[ false] 0
+[ false] ""
+[ false] null
+[false ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
 [ ] nil
@@ -78,7 +85,10 @@ if no_name
 end
 ```
 ```text
-Your answer.
+
+My name is: 
+=> nil
+
 ```
 
 ```rb
@@ -88,7 +98,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+=> nil
 ```
 
 ```rb
@@ -98,7 +108,9 @@ if age
 end
 ```
 ```text
-Your answer.
+TypeError: no implicit conversion of nil into String
+from (pry):26:in `+'
+
 ```
 
 ```rb
@@ -108,7 +120,7 @@ if age
 end
 ```
 ```text
-Your answer.
+SyntaxError: unexpected keyword_end, expecting end-of-input
 ```
 
 ### Conditionals
@@ -125,7 +137,21 @@ Fizz-Buzz is a classic coding exercise that you can create using your knowledge 
 * If the number is divisible by both 3 and 5, print `"FizzBuzz"`.
 * If the number does not meet any of the above conditions, just print the number.
 
-Your output should look something like this...
+counter = (1..100).to_a
+
+counter.each { |elem| 
+if elem % 3 == 0 and  elem % 5 == 0
+ puts "#{elem} buzzfizz" 
+elsif elem % 3 == 0 
+puts "#{elem} fizz"  
+elsif  elem % 5 == 0 
+puts "#{elem} buzz" 
+else
+puts elem 
+end                    
+
+}
+
 ```
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
 ```

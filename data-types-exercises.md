@@ -9,45 +9,50 @@
 ```rb
 2 ** 3
 ```
-```text
-Your answer.
+```2*2*2 =8
+
+ 8
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
-```text
-Your answer.
+```
+12*12 =144
+
+
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
-```text
-Your answer.
+```"a millia milli"  print 3 times
+
+"a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
-```text
-Your answer.
+```i can't divide string to number 
+
+error out 
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
-```text
-Your answer.
+``` it will not print before we convert the number to string
+
+Error out
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
-```text
-Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -58,10 +63,10 @@ Your answer.
 [ ] false
 [ ] 0
 [ ] ""
-[ ] null
+[f] null
 [ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
+[f] undefined
+[f] NaN
 [ ] nil
 ```
 
@@ -78,7 +83,9 @@ if no_name
 end
 ```
 ```text
-Your answer.
+
+My name is: 
+
 ```
 
 ```rb
@@ -88,7 +95,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+i thing nothing will happen 
 ```
 
 ```rb
@@ -98,7 +105,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Error out
 ```
 
 ```rb
@@ -108,7 +115,9 @@ if age
 end
 ```
 ```text
-Your answer.
+will return the input user 24
+
+My age is: 24
 ```
 
 ### Conditionals

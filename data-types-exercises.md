@@ -56,14 +56,14 @@ puts "My favorite number is: #{my_favorite_number}"
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
-[ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
-[ ] nil
+[ false ] false
+[ true ] 0
+[ true ] ""
+[ true ] null
+[ true ] [ ] (empty array)
+[ true ] undefined
+[ true ] NaN
+[ false ] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?

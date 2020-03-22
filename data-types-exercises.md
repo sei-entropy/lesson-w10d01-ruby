@@ -144,16 +144,7 @@ Fizz-Buzz is a classic coding exercise that you can create using your knowledge 
 Your output should look something like this...
 
 ```
-i = 1
-while i <= 100
-    case [i % 3 == 0, i % 5 == 0]
-    when [true, true]    then "FizzBuzz"
-    when [true, false]   then "Fizz"
-    when [false, true]   then "Buzz"
-    else
-      pi
-    end
-end
+
 
 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, Fizz Buzz, 16, 17, Fizz, 19, Buzz, Fizz, 22, 23, Fizz, Buzz, 26, Fizz, 28, 29, Fizz Buzz, 31, 32, Fizz, 34, Buzz, Fizz, ...
 ```
@@ -162,10 +153,29 @@ end
   <summary><strong>We haven't covered loops yet, so to get you started...</strong></summary>
 
 ```rb
-i = 1
-while i <= 100
-  # Your code goes in here.
+(1..100).each do |i|
+if (i % 3 == 0)
+      puts "Fizz"
+    elsif (i % 5 == 0)
+      puts "Buzz"
+    elsif (i % 3 == 0 && i % 5 == 0)
+      puts "FizzBuzz"
+    else
+      puts i
+    end
 end
+# i = 1
+# while i <= 100
+#     if (i % 3 == 0)
+#       puts "Fizz"
+#     elsif (i % 5 == 0)
+#       puts "Buzz"
+#     elsif (i % 3 == 0 && i % 5 == 0)
+#       puts "FizzBuzz"
+#     else
+#       puts i
+#     end
+# end
 ```
 
 </details>

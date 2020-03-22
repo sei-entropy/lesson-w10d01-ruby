@@ -9,60 +9,86 @@
 ```rb
 2 ** 3
 ```
+
 ```text
-Your answer.
+OUTPUT:
+
+8, the above will calculate 2 exponent 3
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
+
 ```text
-Your answer.
+OUTPUT:
+
+144.
+
+Ruby operators' precedence:
+Parenthesis > Exponentiation > Multiply, divide, and modulo
+(4 * 3) ** 2  => 12 ** 2 => 144
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
+
 ```text
-Your answer.
+OUTPUT:
+
+"a milli a millia milli a millia milli a milli"
+First, Concat the two strings and then repeat it 3 times
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
+
 ```text
-Your answer.
+OUTPUT:
+
+Error out
+Repeats the string 4 times and then generates an error
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
+
 ```text
-Your answer.
+OUTPUT:
+
+Error out
+my_favorite_number variable holds an integer which has not been been converted to string
 ```
 
 ```rb
 my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
+
 ```text
-Your answer.
+OUTPUT:
+
+My favorite number is: 13
+Everything between #{} is evaluated as Ruby code, and the result of the evaluation will be embedded in the string
 ```
 
-### Truthiness and Falsiness
+### Truthiness and Falseness
 
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+[X] false
 [ ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[X] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -77,8 +103,10 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
+
 ```text
-Your answer.
+My name is:  
+The above variable no_name is considered as truthy value with empty string.
 ```
 
 ```rb
@@ -87,8 +115,9 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
+
 ```text
-Your answer.
+Nothing is printed, because no_name has a falsy value (nil).
 ```
 
 ```rb
@@ -97,8 +126,10 @@ if age
   puts "My age is: " + no_name
 end
 ```
+
 ```text
-Your answer.
+Error out
+no_name is undefined
 ```
 
 ```rb
@@ -107,8 +138,11 @@ if age
   puts "My age is: " + age
 end
 ```
+
 ```text
-Your answer.
+user_input = 10
+output => My age is: 10
+It will output whatever the user enters.
 ```
 
 ### Conditionals

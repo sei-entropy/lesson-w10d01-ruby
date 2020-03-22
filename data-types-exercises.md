@@ -11,6 +11,7 @@
 ```
 ```text
 Your answer.
+8
 ```
 
 ```rb
@@ -18,6 +19,7 @@ Your answer.
 ```
 ```text
 Your answer.
+144
 ```
 
 ```rb
@@ -32,6 +34,7 @@ Your answer.
 ```
 ```text
 Your answer.
+a milli a millia milli a millia milli a milli
 ```
 
 ```rb
@@ -40,6 +43,7 @@ puts "My favorite number is: " + my_favorite_number
 ```
 ```text
 Your answer.
+"Error out
 ```
 
 ```rb
@@ -48,6 +52,7 @@ puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
 Your answer.
+My favorite number is: 13
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +60,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
+[false ] false
+[false ] 0
 [ ] ""
 [ ] null
 [ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[ false] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -79,6 +84,9 @@ end
 ```
 ```text
 Your answer.
+My name is:
+
+empty
 ```
 
 ```rb
@@ -89,6 +97,8 @@ end
 ```
 ```text
 Your answer.
+
+nothing no output 
 ```
 
 ```rb
@@ -99,6 +109,8 @@ end
 ```
 ```text
 Your answer.
+
+undefined there is no no_name
 ```
 
 ```rb
@@ -109,6 +121,7 @@ end
 ```
 ```text
 Your answer.
+My age is: 24
 ```
 
 ### Conditionals
@@ -137,6 +150,16 @@ Your output should look something like this...
   i = 1
   while i <= 100
     # Your code goes in here.
+    if i % 3 == 0
+        puts "Fizz"
+    elsif i % 5 == 0
+        puts "Buzz"
+    elsif  i % 3 == 0 && i % 5 == 0
+        puts "FizzBuzz"
+    else 
+    puts  i
+    end
+    i+=1
   end
   ```
 

@@ -10,28 +10,28 @@
 2 ** 3
 ```
 ```text
-Your answer.
+It will give the result of 2 to the power of 3. I made this guess because I used the same syntax in another language (Python)
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144. It follows the order of operations by solving the inner parantheses first.
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+"a milli a millia milli a millia milli a milli". Because it concatinates the strings first then repeat them 3 times.
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Error. Because the "/" operator cannot be used with String, and the expression inside the paranthesis evaluates to a String.
 ```
 
 ```rb
@@ -39,7 +39,7 @@ my_favorite_number = 13
 puts "My favorite number is: " + my_favorite_number
 ```
 ```text
-Your answer.
+Error. Cannot concatainate String with Integer without being explicitly converted.
 ```
 
 ```rb
@@ -47,7 +47,7 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+"My favorite number is: 13". String interpolation is used to insert a variable's value.
 ```
 
 ### Truthiness and Falsiness
@@ -55,14 +55,14 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
-[ ] 0
-[ ] ""
-[ ] null
-[ ] [ ] (empty array)
-[ ] undefined
-[ ] NaN
-[ ] nil
+[y] false
+[n] 0
+[n] ""
+[n] null
+[n] [ ] (empty array)
+[n] undefined
+[n] NaN
+[y] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +78,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+"My name is:  ". The if block will execute because "" (empty string) is a truthy value. 
 ```
 
 ```rb
@@ -88,7 +88,7 @@ if no_name
 end
 ```
 ```text
-Your answer.
+nil. Cause nil is a falsy value, so the code inside the if block isn't gonna execute.
 ```
 
 ```rb
@@ -98,7 +98,7 @@ if age
 end
 ```
 ```text
-Your answer.
+Error. Because no_name is undefined
 ```
 
 ```rb
@@ -108,7 +108,7 @@ if age
 end
 ```
 ```text
-Your answer.
+"My age is 24". It will read the input from the user and print the string with the input.
 ```
 
 ### Conditionals
@@ -136,7 +136,12 @@ Your output should look something like this...
   ```rb
   i = 1
   while i <= 100
-    # Your code goes in here.
+    case
+    when i % 15 === 0 then puts "FizzBuzz"
+    when i % 3 === 0 then puts "Fizz"
+    when i % 5 === 0 then puts "Buzz"
+    else puts i
+    end
   end
   ```
 

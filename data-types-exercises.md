@@ -10,28 +10,30 @@
 2 ** 3
 ```
 ```text
-Your answer.
+8
+
 ```
 
 ```rb
 ((16 / 4) * (2 + 1)) ** 2
 ```
 ```text
-Your answer.
+144
+
 ```
 
 ```rb
 ("a milli " + "a milli") * 3
 ```
 ```text
-Your answer.
+"a milli a millia milli a millia milli a milli"
 ```
 
 ```rb
 ("a milli " * 4) / 2
 ```
 ```text
-Your answer.
+Error : undifind method 
 ```
 
 ```rb
@@ -47,7 +49,9 @@ my_favorite_number = 13
 puts "My favorite number is: #{my_favorite_number}"
 ```
 ```text
-Your answer.
+
+My favorite number is: 13
+
 ```
 
 ### Truthiness and Falsiness
@@ -55,7 +59,8 @@ Your answer.
 #### Which of these evaluate as `false` in Ruby? Mark all that apply.
 
 ```text
-[ ] false
+
+[+] false
 [ ] 0
 [ ] ""
 [ ] null
@@ -63,6 +68,7 @@ Your answer.
 [ ] undefined
 [ ] NaN
 [ ] nil
+
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -78,7 +84,9 @@ if no_name
 end
 ```
 ```text
-Your answer.
+
+My name is : 
+
 ```
 
 ```rb
@@ -87,9 +95,12 @@ if no_name
   puts "My name is: " + no_name
 end
 ```
+
 ```text
-Your answer.
+shows nothing 
+
 ```
+
 
 ```rb
 age = 21
@@ -97,8 +108,9 @@ if age
   puts "My age is: " + no_name
 end
 ```
+
 ```text
-Your answer.
+NameError: undefined local variable or method `no_name'
 ```
 
 ```rb
@@ -108,7 +120,9 @@ if age
 end
 ```
 ```text
-Your answer.
+
+My age is: 23
+
 ```
 
 ### Conditionals
@@ -136,7 +150,22 @@ Your output should look something like this...
   ```rb
   i = 1
   while i <= 100
-    # Your code goes in here.
+    i = 1
+  while i <= 100
+   if i % 3 ==0
+    puts"FIZZ"
+
+   elsif i % 5 ==0
+    puts"BUZZ"
+
+   elsif i % 15 ==0 
+    puts "FizzBuzz"
+   else 
+  puts i 
+   end
+   i+=1
+end
+
   end
   ```
 

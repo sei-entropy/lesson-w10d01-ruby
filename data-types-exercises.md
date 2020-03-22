@@ -66,13 +66,13 @@ puts "My favorite number is: #{my_favorite_number}"
 
 ```text
 [*] false
-[ ] 0
-[*] ""
+[*] 0
+[ ] ""
 [ ] null
-[*] [ ] (empty array)
+[ ] [ ] (empty array)
 [ ] undefined
 [ ] NaN
-[ ] nil
+[*] nil
 ```
 
 #### What are the outputs and/or side effects of the following code snippets?
@@ -150,7 +150,8 @@ while i <= 100
     when [true, true]    then "FizzBuzz"
     when [true, false]   then "Fizz"
     when [false, true]   then "Buzz"
-    else i
+    else
+      pi
     end
 end
 

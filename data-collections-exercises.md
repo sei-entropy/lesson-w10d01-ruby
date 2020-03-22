@@ -62,7 +62,11 @@ heroes.select { |str| str.start_with?("B") }
 Initialize a hash called `ninja_turtle` with the properties `name`, `weapon` and `radical`. They should have values of "Michelangelo", "Nunchuks" and `true` respectively.
 
 ```rb
-# Your answer here
+ninja_turtle = {
+    name: "Michelangelo",
+    weapon: "Nunchuks",
+    radical: true
+}
 ```
 
 Add a key `age` to `ninja_turtle`. Set it to whatever numerical value you'd like.
@@ -76,7 +80,6 @@ ninja_turtle = {
 Remove the `radical` key-value pair from `ninja_turtle`.
 
 ```rb
-ninja_turtle[:radical] = "Radical Value"
 ninja_turtle.delete(:radical)
 ```
 

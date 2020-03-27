@@ -50,7 +50,7 @@ heroes.shuffle!
 Select a random element from `heroes` using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.6.1/Array.html).
 
 ```rb
-heroes.pop()
+heroes..sample
 ```
 
 Select all elements in `heroes` that begin with "B" using a method. [The Ruby documentation might help](http://ruby-doc.org/core-2.6.1/Array.html).
